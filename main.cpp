@@ -96,7 +96,7 @@ using namespace std;
     Visitor:: ~Visitor(){}
     void Visitor:: diplayInfo(){
         cout<< "Visitor Info: "<<endl;
-        cout<<"Name: "<< name <<endl<<"Tickets Bought: "<< ticketsBought<<endl;
+        cout<<"Name: "<< visitorName <<endl<<"Tickets Bought: "<< ticketsBought<<endl;
     }
     string Visitor:: getVName(){return this->visitorName;}
     int Visitor:: getTB(){return this->ticketsBought;}
