@@ -18,11 +18,11 @@ class Animal{
     void feed();
     string getName();
     int getAge();
-    bool isHungry();
+    bool isAHungry();
     
-    void setName():
-    void setAge();
-    void setH();
+    void setName(string n);
+    void setAge(int a);
+    void setH(bool h);
     
 };
 
