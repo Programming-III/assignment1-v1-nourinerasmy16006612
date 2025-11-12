@@ -1,5 +1,5 @@
 #ifndef ANIMAL_H
-define ANIMAL_H
+#define ANIMAL_H
 
 #include <iostream>
 #include <string>
@@ -16,6 +16,13 @@ class Animal{
     ~Animal();
     void display();
     void feed();
+    string getName();
+    int getAge();
+    bool isHungry();
+    
+    void setName():
+    void setAge();
+    void setH();
     
 };
 
