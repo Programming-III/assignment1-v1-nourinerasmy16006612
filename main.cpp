@@ -104,7 +104,16 @@ using namespace std;
     void Visitor:: setTB(int t){this->ticketsBought=t;}
     
     int main(){
-        
+        Enclosure E1(3,4);
+     Mammal m1("lion",4,true,"fur");
+     Bird b1("bird",4,true,09.3);
+     Reptile r("rep",5,true,true);
+
+     e1.addAnimals(m1*);
+          e1.addAnimals(b1*);
+     e1.addAnimals(r*);
+
+     
         
     }
     
