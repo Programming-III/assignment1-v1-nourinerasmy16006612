@@ -20,9 +20,7 @@ using namespace std;
     }
     Animal:: ~Animal(){}
     void Animal:: display(){
-        cout<< "Name: "<< this->name<<endl;
-         cout<< "Age: "<< this->age<<endl;
-        cout<< "Is hungry: "<< this->isHungry<<endl;
+        cout<< name << "(Age: "<<age <<", "<<isHungry<<")"<<endl;  
 
     }
     void Animal:: feed(){
@@ -34,7 +32,7 @@ using namespace std;
     int Animal:: getAge(){
         return this->age;
     }
-    bool Animal:: isHungry(){
+    bool Animal:: isAHungry(){
         return this->isHungry;
     }
     
@@ -76,10 +74,15 @@ using namespace std;
    Enclosure:: ~Enclosure(){}
     void Enclosure:: addAnimals(Animal* a){
         if(animals!=nullptr){
-            (animals+currentCount)=a;
+            //(animals+currentCount)=a;
         }
     }
-    void Enclosure:: displayAnimals(){}
+    void Enclosure:: displayAnimals(){
+        cout<< "Enclosure 1 Animals: "<<endl;
+        for(int i =0;i<currentCount;i++){
+            (animals+i)->display();
+        }
+    }
     int Enclosure:: getCap(){return this->capacity;}
     int Enclosure:: getCount(){return this->currentCount;}
     void Enclosure:: setCap(int c){ this->capacity=c;}
@@ -91,11 +94,17 @@ using namespace std;
       this->ticketsBought=t;
   }
     Visitor:: ~Visitor(){}
-    void Visitor:: diplayInfo(){}
+    void Visitor:: diplayInfo(){
+        cout<< "Visitor Info: "<<endl;
+        cout<<"Name: "<< name <<endl<<"Tickets Bought: "<< ticketsBought<<endl;
+    }
     string Visitor:: getVName(){return this->visitorName;}
     int Visitor:: getTB(){return this->ticketsBought;}
     void Visitor:: setVName(string n){this->visitorName=n;}
-    void Visitor:: setTB(int t){this->ticketsBought=t}
+    void Visitor:: setTB(int t){this->ticketsBought=t;}
     
-    int main(){}
+    int main(){
+        
+        
+    }
     
